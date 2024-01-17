@@ -1,0 +1,15 @@
+import { Link } from "react-router-dom";
+
+export const NotFound = () => {
+  return (
+    <div className="flex flex-col items-center justify-center h-screen">
+      <h1 className="text-3xl font-bold">404</h1>
+      <p className="text-accent-foreground font-bold">
+        Voltar para o{" "}
+        <Link to="/" className="text-sky-500 hover:underline dark:text-sky-400">
+          Dashboard
+        </Link>
+      </p>
+    </div>
+  );
+};

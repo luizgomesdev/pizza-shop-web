@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet-async";
 import { OrderTableFilters } from "./components/OrderTableFilters";
 import { OrderTableRow } from "./components/OrderTableRow";
 import { OrderStatus } from "./enums/OrderStatus.enum";
-import { CustomPagination, Pagination } from "@/components/Pagination";
+import { CustomPagination } from "@/components/Pagination";
 
 export const Orders = () => {
   const orders = [
@@ -74,7 +74,12 @@ export const Orders = () => {
           </Table>
         </div>
 
-        <CustomPagination total={5} limit={1} page={0} onPageChange={() => {}} />
+        <CustomPagination
+          total={5}
+          limit={1}
+          page={0}
+          onPageChange={() => {}}
+        />
       </div>
     </>
   );
