@@ -1,10 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Dashboard } from "./pages/app/dashboard";
-import { SignIn } from "./pages/auth/sign-in";
-import { AppLayout } from "./pages/_layouts/app";
-import { AuthLayout } from "./pages/_layouts/auth";
-import { SignUp } from "./pages/auth/sign-up";
-import { Orders } from "./pages/app/orders/orders";
+import { Dashboard } from "./app/dashboard/page";
+import { SignIn } from "./app/auth/sign-in/page";
+
+import { SignUp } from "./app/auth/sign-up/page";
+import { Orders } from "./app/dashboard/orders/page";
+import { AppLayout } from "./app/dashboard/_layout";
+import { AuthLayout } from "./app/auth/_layout";
 
 export const router = createBrowserRouter([
   {
